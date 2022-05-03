@@ -1,0 +1,14 @@
+
+.communication{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.communication button{
+    background: none;
+    border: none;
+    padding: 0;
+    width: max-content;
+    height: max-content;
+}

@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Lato', sans-serif;
+  background: #999;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.messageImage {
+  max-width: 300px;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userImage {
+  width: 36px;
 }

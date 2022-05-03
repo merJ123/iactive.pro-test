@@ -1,0 +1,11 @@
+
+.message {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "a c" 
+    "f f";
+    grid-template-columns: 4% 1fr;
+    background: #FFF;
+}

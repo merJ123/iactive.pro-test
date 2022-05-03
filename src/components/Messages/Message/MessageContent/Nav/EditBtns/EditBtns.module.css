@@ -1,0 +1,19 @@
+
+.editing {
+    display: flex;
+    gap: 10px;
+}
+
+.editing button{
+    color: #0088EE;
+    border: 1px solid #0088EE;
+    font-size: 11px;
+    display: flex;
+    gap: 10px;
+    background: #FFF;
+    width: 64px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}

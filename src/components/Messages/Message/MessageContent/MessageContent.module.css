@@ -1,0 +1,9 @@
+
+.message_content{
+    grid-area: c;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}

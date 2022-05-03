@@ -1,0 +1,27 @@
+.message_text {
+    padding-right: 10px;
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.message_text p{
+    font-size: 16px;
+    letter-spacing: -0.035em;
+    line-height: 22px;
+    color: #333;
+}
+
+.message_text button {
+    font-size: 12px;
+    color: #808080;
+    text-decoration: none;
+    border: none;
+    background: none;
+    display: contents;
+}
+
+.image{
+    max-width: 400px;
+    border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+
+
+p{
+    margin: 0;
+}
+
+.message_container {
+    width: 886px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

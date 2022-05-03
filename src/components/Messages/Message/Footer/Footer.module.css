@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: #CDCDCD;
+    grid-area: f;
+}
+
+.footer_active{
+    color: #0088EE;
+}
