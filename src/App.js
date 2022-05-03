@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useEffect } from 'react'
 import axios from 'axios'
-import Context from './context';
 import MessageFeed from './components/MessageFeed';
 
 
@@ -21,7 +20,6 @@ function App() {
     })
     .then(response => response.data.Messages)
     .then(data => {
-      console.log(data)
         setData(data)
     })
   }, [])
