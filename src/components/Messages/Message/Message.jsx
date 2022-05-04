@@ -5,10 +5,13 @@ import s from "./Message.module.css"
 import MessageContent from "./MessageContent/MessageContent";
 
 const Message = (props) => {
+
+    const time = props.date.slice(11, 16)
+
     return(
         <div className={s.message}>
                 <Ava image = {props.profileImage} 
-                     time = {props.time} 
+                     time = {time} 
                      alt = {props.profileImageAlt} 
                      />
                 <MessageContent attachments = {props.attachments}

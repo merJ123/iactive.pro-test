@@ -3,11 +3,15 @@ import Message from "./Message/Message";
 
 const Messages = (props) => {
 
-  console.log(props)
+  let messages = props.store.map((el) => {
 
-  let messages = props.store.map((el) => 
+    
 
-    <Message attachments = {el.attachments}
+
+
+    return (
+    <Message date = {el.date}
+             attachments = {el.attachments}
              key = {el.id} 
              time = {el.time}
              author = {el.author}
@@ -16,7 +20,7 @@ const Messages = (props) => {
              channel = {el.channel}
              content = {el.content}
              media = {el.messageImage}
-             favoriteMessage = {el.favoriteMessage} />)
+             favoriteMessage = {el.favoriteMessage} />)})
 
   return (
     <div className={s.message_container}>

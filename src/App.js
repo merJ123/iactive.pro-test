@@ -8,10 +8,17 @@ function App() {
   
   const [posts, setPosts] = React.useState([])
 
-  // useEffect(() => {
-  //   const raw = localStorage.getItem('posts') || []
-  //   setPosts(JSON.parse(raw))    
-  // }, [])
+  useEffect(() => {
+    axios({
+      method: 'POST',
+        url: 'http://f0665380.xsph.ru/',
+        data: {
+          actionName: 'MessagesLoad',
+          oldMessages: true
+        },
+        headers: { "Content-Type": "multipart/form-data" }
+    }).then(response => console.log(response, "old message"))
+  }, [])
 
   useEffect(() => {
       axios({
