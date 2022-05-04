@@ -50,7 +50,7 @@ function App() {
         .then(newElement => {
 
         })
-      }), 2000)
+      }), 5000)
     })
     
   }, [])
