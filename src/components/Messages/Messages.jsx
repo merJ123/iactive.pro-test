@@ -3,6 +3,8 @@ import Message from "./Message/Message";
 
 const Messages = (props) => {
 
+  console.log(props)
+
   let messages = props.store.map((el) => 
 
     <Message attachments = {el.attachments}
