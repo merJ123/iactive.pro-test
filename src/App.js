@@ -26,6 +26,7 @@ function App() {
       .then(data => {
         console.log(data)
           setPosts(data)
+          localStorage.setItem('posts', JSON.stringify(data))
           return data
       })
       .then(data => {
@@ -51,6 +52,7 @@ function App() {
               raw = data.map(el => {
                 raw.push(el)
                 console.log(el, ' el', raw)
+                localStorage.setItem('posts', JSON.stringify(raw))
                 setPosts(raw)
               })
               console.log(raw, " raw")
